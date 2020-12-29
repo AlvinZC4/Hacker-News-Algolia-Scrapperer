@@ -16,9 +16,9 @@ if (process.env.NODE_ENV === "production") {
 };
 
 // Include Routes
-app.use(routes)
+app.use(routes);
 
 // Start API server
 app.listen(PORT, () => {
-    console.log(`Application running on port ${PORT}!`)
-})
+    console.log(`Application running on port ${PORT}!`);
+});
