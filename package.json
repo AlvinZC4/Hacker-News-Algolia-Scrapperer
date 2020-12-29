@@ -2,7 +2,7 @@
   "name": "hacker-news-algolia-scrapperer",
   "version": "1.0.0",
   "description": "A web scrapper application that will search and return articles from Hacker News Algolia based on user input",
-  "main": "index.js",
+  "main": "server.js",
   "dependencies": {
     "axios": "^0.21.1",
     "concurrently": "^5.3.0",

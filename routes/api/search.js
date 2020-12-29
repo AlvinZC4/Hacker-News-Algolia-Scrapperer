@@ -5,4 +5,4 @@ const searchController = require("../../controllers/searchController");
 router.route(":search")
     .get(searchController.search);
 
-module.expors = router;
+module.exports = router;
