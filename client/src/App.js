@@ -8,39 +8,39 @@ import { addArticles, updateSearchField } from "./utilities/actions";
 
 function App() {
 
-  const [search, setSearch] = useState({
-    search: ""
-  })
+  // const [search, setSearch] = useState({
+  //   search: ""
+  // })
 
-  const dispatch = useDispatch()
+//   const dispatch = useDispatch()
 
-  function handleInputChange(event) {
-    const name = event.target.name
-    const value = event.target.value
+//   function handleInputChange(event) {
+//     const name = event.target.name
+//     const value = event.target.value
 
-    setSearch({
-      [name]: value
-    })
+//     setSearch({
+//       [name]: value
+//     })
 
-    console.log(search)
-  }
+//     console.log(search)
+//   }
 
-  const searchArticles  = () => {
-    console.log("execute search", search.search)
-    if (search === "") {
-        return
-    }
-    API.findArticles(search.search)
-        .then(res => {
-          console.log("API response", res.data)
-            dispatch(addArticles(res.data))
-        });
-}
+//   const searchArticles  = () => {
+//     console.log("execute search", search.search)
+//     if (search === "") {
+//         return
+//     }
+//     API.findArticles(search.search)
+//         .then(res => {
+//           console.log("API response", res.data)
+//             dispatch(addArticles(res.data))
+//         });
+// }
 
-function handleSubmit(event) {
-    event.preventDefault();
-    searchArticles();
-}
+// function handleSubmit(event) {
+//     event.preventDefault();
+//     searchArticles();
+// }
 
 
     return (
@@ -48,9 +48,9 @@ function handleSubmit(event) {
         <SearchForm 
           label="search"
           id="search"
-          value={search.search}
-          handleInputChange={handleInputChange}
-          handleSubmit={handleSubmit}
+          // value={search.search}
+          // handleInputChange={handleInputChange}
+          // handleSubmit={handleSubmit}
         />
         <Articles />
       </div>
