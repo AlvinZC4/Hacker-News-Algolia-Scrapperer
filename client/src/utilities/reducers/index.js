@@ -3,8 +3,8 @@ import { ADD_ARTICLES, UPDATE_SEARCHFIELD } from "../constants/action-types";
 
 // Set the initial state of the application.
 const initialState = {
-    search = "",
-    results = []
+    search: "",
+    results: []
 };
 // Create the top level reducer for the application.
 function rootReducer(state = initialState, action) {
