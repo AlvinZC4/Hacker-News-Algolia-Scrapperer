@@ -20,7 +20,7 @@ module.exports = {
                 console.log("initial result", result);
 
                 // create array that contains all results
-                const resultArry = result.hits;
+                const resultArry = result.data.hits;
 
                 // map resultArry to create a respone array that contains only the information that is to be sent back to the user
                 const responseArry = resultArry.map((index) => {

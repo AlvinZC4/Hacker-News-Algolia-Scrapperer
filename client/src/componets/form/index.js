@@ -12,47 +12,54 @@ export default function SearchForm(props) {
     //     };
     // };
 
-    const search = useSelector(state => state.search);
+    // const search = useSelector(state => state.search);
     const dispatch = useDispatch();
 
-    function handleInputChange(event) {
-        const name = event.target.name;
-        const value = event.target.value;
+    // const [search, setSearch] = useState({
+    //     search: ""
+    // });
 
-        dispatch(updateSearchField) ({
-        [name]: value
-        });
-    }
+    // function handleInputChange(event) {
+    //     const name = event.target.name;
+    //     const value = event.target.value;
 
-    const searchArticles  = () => {
-        console.log("execute search", search)
-        if (search === "") {
-            return
-        }
-        API.findArticles(search)
-            .then(res => {
-                dispatch(addArticles(res.data))
-            });
-    }
+    //     // dispatch(null, updateSearchField) ({
+    //     // [name]: value
+    //     // });
+    //     setSearch({
+    //         [name]: value
+    //     });
+    // }
 
-    function handleSubmit(event) {
-        event.preventDefault();
-        searchArticles();
-    }
+    // const searchArticles  = () => {
+    //     console.log("execute search", props.search)
+    //     if (props.search === "") {
+    //         return
+    //     }
+    //     API.findArticles(props.search)
+    //         .then(res => {
+    //             dispatch(addArticles(res.data))
+    //         });
+    // }
+
+    // function handleSubmit(event) {
+    //     event.preventDefault();
+    //     searchArticles();
+    // }
 
     return (
         <form>
             <label htmlFor="search">{props.label}</label>
             <input 
-                onChange={handleInputChange}
-                value={search}
+                onChange={props.handleInputChange}
+                value={props.search}
                 name="search"
                 type="text"
                 className="form-control"
                 id={props.id}
             />
             <div>
-                <button onClick={handleSubmit}>Search</button>
+                <button onClick={props.handleSubmit}>Search</button>
             </div>
         </form>
     )

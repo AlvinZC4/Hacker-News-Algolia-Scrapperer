@@ -2,7 +2,7 @@
   "name": "hacker-news-algolia-scrapperer",
   "version": "0.1.0",
   "private": true,
-  "proxy": "https://localhost:3001",
+  "proxy": "http://localhost:3001/",
   "dependencies": {
     "@reduxjs/toolkit": "^1.5.0",
     "@testing-library/jest-dom": "^4.2.4",
