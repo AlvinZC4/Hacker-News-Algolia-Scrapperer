@@ -2,7 +2,7 @@
 
 import { ADD_ARTICLES, UPDATE_SEARCHFIELD, SAVE_SEARCH } from "../constants/action-types";
 
-// Create and export actions.
+// Create and export actions for use in the reducer.
 
 export function addArticles(payload) {
     return { type: ADD_ARTICLES, payload };

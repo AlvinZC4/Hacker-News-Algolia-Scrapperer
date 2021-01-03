@@ -1,17 +1,16 @@
 import React from "react";
 import { useSelector } from "react-redux";
-// import store from "../../utilities/store"
 
-// const mapStateToProps = state => {
-//     return { results: state.results };
-// };
-
+// Create and export List component that will display articles returned from API
 export default function List() {
 
+    // Retrieve the current state of the results array that contains information for articles from API call and store in articles variable.
     const articles = useSelector(state => state.results)
 
+    // Return an unordred list
     return (
         <ul>
+            {/* map over the articles array to create list items that display each article's title and author, with links to each article */}
             {articles.map(el => (
                 <li key={el.id}>
                     <a href={el.url}>
