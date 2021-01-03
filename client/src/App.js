@@ -32,6 +32,7 @@ function App() {
     }
     API.findArticles(search.search)
         .then(res => {
+          console.log("API response", res.data)
             dispatch(addArticles(res.data))
         });
 }
