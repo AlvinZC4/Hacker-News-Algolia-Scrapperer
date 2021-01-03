@@ -15,7 +15,7 @@ export default function List() {
             {articles.map(el => (
                 <li key={el.id}>
                     <a href={el.url}>
-                        <h7>{el.title}</h7>
+                        <h6>{el.title}</h6>
                     </a>
                     <p>By {el.author}</p>
                 </li>

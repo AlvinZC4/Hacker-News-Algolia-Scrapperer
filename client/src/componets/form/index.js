@@ -32,11 +32,11 @@ export default function SearchForm(props) {
     }
 
     const searchArticles  = () => {
-        console.log("execute search", search)
+        console.log("execute search", search.search)
         if (search === "") {
             return
         }
-        API.findArticles(search)
+        API.findArticles(search.search)
             .then(res => {
                 console.log("search results", res.data)
                 dispatch(addArticles(res.data))
