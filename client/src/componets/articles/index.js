@@ -12,14 +12,14 @@ export default function List() {
 
     return (
         <ul>
-            {articles.map(el => {
+            {articles.map(el => (
                 <li key={el.id}>
                     <a href={el.url}>
                         <h7>{el.title}</h7>
                     </a>
                     <p>By {el.author}</p>
                 </li>
-            })}
+            ))}
         </ul>
     )
     

@@ -17,7 +17,6 @@ module.exports = {
         // Use axios to query Hacker News Algolia
         axios.get(FULLURL)
             .then(result => {
-                console.log("initial result", result);
 
                 // create array that contains all results
                 const resultArry = result.data.hits;
@@ -33,7 +32,6 @@ module.exports = {
                         }
                     );
                 });
-                console.log("response array", responseArry)
 
                 // send the response arrry back to the front-end
                 res.json(responseArry)

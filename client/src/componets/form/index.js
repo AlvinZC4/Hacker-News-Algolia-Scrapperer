@@ -38,6 +38,7 @@ export default function SearchForm(props) {
         }
         API.findArticles(search)
             .then(res => {
+                console.log("search results", res.data)
                 dispatch(addArticles(res.data))
             });
     }
