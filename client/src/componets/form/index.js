@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { addArticles, updateSearchField } from "../../utilities/actions";
+import { addArticles, updateSearchField, saveSearch } from "../../utilities/actions";
 import API from "../../utilities/api/API.js"
 
 export default function SearchForm(props) {
@@ -13,6 +13,7 @@ export default function SearchForm(props) {
     // };
 
     const search = useSelector(state => state.search);
+    const savedSearches = useSelector(state => state.savedSearches)
     const dispatch = useDispatch();
 
     // const [search, setSearch] = useState({
@@ -45,6 +46,8 @@ export default function SearchForm(props) {
 
     function handleSubmit(event) {
         event.preventDefault();
+        dispatch(saveSearch(search.search))
+        console.log("Saved Searches", savedSearches)
         searchArticles();
     }
 

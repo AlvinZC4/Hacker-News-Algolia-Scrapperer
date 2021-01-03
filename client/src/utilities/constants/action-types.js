@@ -2,3 +2,5 @@
 export const ADD_ARTICLES = "ADD_ARTICLES";
 
 export const UPDATE_SEARCHFIELD = "UPDATE_SEARCHFIELD";
+
+export const SAVE_SEARCH = "SAVE_SEARCH"

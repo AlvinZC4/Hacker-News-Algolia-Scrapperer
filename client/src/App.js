@@ -46,7 +46,7 @@ function App() {
     return (
       <div>
         <SearchForm 
-          label="search"
+          label="Search Hacker News Articles"
           id="search"
           // value={search.search}
           // handleInputChange={handleInputChange}
