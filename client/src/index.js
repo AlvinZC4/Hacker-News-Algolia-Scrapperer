@@ -7,7 +7,9 @@ import store from './utilities/store/index';
 import { Provider } from 'react-redux';
 import * as serviceWorker from './serviceWorker';
 
+// wrap the app in React.DOM.render to render the necessary componets to the DOM when there is a change is state
 ReactDOM.render(
+    // Wrap the app with provider and pass in the store as a prop to make the store available to all components in the application
     <Provider store={store}>
       <App />
     </Provider>,
