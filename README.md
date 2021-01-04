@@ -18,11 +18,13 @@
 
   ## Installation
 
-  Simply navigate your browser to ... to access the application.
+  Simply navigate your browser to https://obscure-fortress-35601.herokuapp.com/ to access the application.
 
   ## How to Use This Application
 
-  Type your search criteria into the search field and click on the search button.
+  Type your search criteria into the search field and click on the search button to find up to 20 articles that contain the search criteria you provided in the title. The title of the article can be clicked to navigate your browser to the article.
+
+  ![Hacker News Aloglia Scapper App](./assets/HackerNewsScrapperApp.png)
 
   ## Test Code
 
