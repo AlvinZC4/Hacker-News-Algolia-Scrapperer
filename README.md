@@ -1,6 +1,6 @@
-# Hacker News Algolia Web Scrapper
+# Hacker News Algolia Web Scraper
 
-  The Hacker News Algolia Web Scrapper is an application that allows the user to search for articles by title and the app will return 20 results that will display the title of the article, the author. The title of the article is a link that will take the user to the article if clicked.
+  The Hacker News Algolia Web Scraper is an application that allows the user to search for articles by title and the app will return 20 results that will display the title of the article, the author. The title of the article is a link that will take the user to the article if clicked.
 
   ![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)
 
@@ -8,9 +8,9 @@
 
   ## Table of Contents:
 
-  1. [How to Install Hacker News Algolia Web Scrapper](#Installation)
-  2. [Using Hacker News Algolia Web Scrapper](#How%20To%20Use%20This%20Application)
-  3. [Testing Hacker News Algolia Web Scrapper](#Test%20Code)
+  1. [How to Install Hacker News Algolia Web Scraper](#Installation)
+  2. [Using Hacker News Algolia Web Scraper](#How%20To%20Use%20This%20Application)
+  3. [Testing Hacker News Algolia Web Scraper](#Test%20Code)
   4. [Ask Us Questions](#Ask%20Questions)
   5. [Licenses](#License)
 
@@ -24,7 +24,7 @@
 
   Type your search criteria into the search field and click on the search button to find up to 20 articles that contain the search criteria you provided in the title. The title of the article can be clicked to navigate your browser to the article.
 
-  ![Hacker News Aloglia Scapper App](./assets/HackerNewsScrapperApp.png)
+  ![Hacker News Aloglia Scaper App](./assets/HackerNewsScrapperApp.png)
 
   ## Test Code
 
